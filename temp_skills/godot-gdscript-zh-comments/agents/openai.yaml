@@ -1,0 +1,4 @@
+interface:
+  display_name: "Godot 中文注释"
+  short_description: "为 Godot GDScript 补写精炼准确的中文注释。"
+  default_prompt: "Use $godot-gdscript-zh-comments to add concise and accurate Chinese comments to a GDScript file."
