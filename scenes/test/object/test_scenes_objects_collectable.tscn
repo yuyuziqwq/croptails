@@ -25,23 +25,18 @@ tile_set = ExtResource("1_0bwo8")
 position = Vector2(251, 202)
 
 [node name="Stone" parent="." unique_id=1665911536 instance=ExtResource("3_o1mtt")]
-y_sort_enabled = true
 position = Vector2(292, 178)
 
 [node name="Log" parent="." unique_id=280059218 instance=ExtResource("4_flc26")]
-y_sort_enabled = true
 position = Vector2(324, 179)
 
 [node name="Egg" parent="." unique_id=1348833164 instance=ExtResource("5_flc26")]
-y_sort_enabled = true
 position = Vector2(292, 203)
 
 [node name="Tomato_Harvest" parent="." unique_id=685159079 instance=ExtResource("7_vpg7w")]
-y_sort_enabled = true
 position = Vector2(251, 178)
 
 [node name="CornHarvest" parent="." unique_id=1768876854 instance=ExtResource("8_swlqt")]
-y_sort_enabled = true
 position = Vector2(215, 173)
 
 [node name="player" parent="." unique_id=261036808 instance=ExtResource("2_fjhq7")]
