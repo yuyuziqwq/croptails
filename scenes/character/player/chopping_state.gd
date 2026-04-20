@@ -5,6 +5,7 @@ extends NodeState
 @export var hit_component_collision_shape: CollisionShape2D
 
 func _ready() -> void:
+	#此时刚进入该状态，应该先禁用掉hit的判定框，防止误判（没有播放浇水动作且没有设置浇水区域就判定了）
 	hit_component_collision_shape.disabled = true
 	hit_component_collision_shape.position = Vector2(0, 0)
 
@@ -35,9 +36,11 @@ func _on_enter() -> void:
 		animated_spite_2d.play("chopping_front")
 		hit_component_collision_shape.position = Vector2(0, 3)
 	
+	#此处上方以及播放了对应的浇水动画且给浇水区域设置了位置，应该改为false来打开碰撞区的判定
 	hit_component_collision_shape.disabled = false
 	
 	
 func _on_exit() -> void:
 	animated_spite_2d.stop()
+	#防止hit判定框误判，关闭碰撞
 	hit_component_collision_shape.disabled = true

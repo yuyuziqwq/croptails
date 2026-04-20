@@ -9,3 +9,17 @@ enum Tools {
 	PlantCron,
 	PlantTomato
 }
+
+enum GrowthStates {
+	Seed,
+	#发芽
+	Germination,
+	#营养生长
+	Vegetative,
+	#繁殖生长
+	Reproduction,
+	#成熟
+	Maturity,
+	#收获
+	Harvesting
+}
