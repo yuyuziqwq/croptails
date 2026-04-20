@@ -2,6 +2,7 @@ extends Node
 
 const MINUTES_PER_DAY: int = 24 * 60
 const MINUTES_PER_HOUR: int = 60
+#TAU为2π，GAME_MINUTE_DURATION的意思是游戏内一分钟对应地球转多少角度，用于确定时间和现实的流速
 const GAME_MINUTE_DURATION: float = TAU / MINUTES_PER_DAY
 
 var game_speed: float = 5.0
@@ -30,7 +31,7 @@ func _process(delta: float) -> void:
 	
 
 func set_initial_time() -> void:
-	var initial_total_minutes = initial_day * MINUTES_PER_HOUR + (initial_hour * MINUTES_PER_HOUR) + initial_minute
+	var initial_total_minutes = initial_day * MINUTES_PER_DAY + (initial_hour * MINUTES_PER_HOUR) + initial_minute
 	
 	time = initial_total_minutes * GAME_MINUTE_DURATION
 	
