@@ -10,6 +10,7 @@
 size = Vector2(13.5, 8.5)
 
 [node name="BasePlant" type="Node2D" unique_id=907950442]
+y_sort_enabled = true
 script = ExtResource("1_7geoi")
 
 [node name="PlantSprite2D" type="Sprite2D" parent="." unique_id=384012834]

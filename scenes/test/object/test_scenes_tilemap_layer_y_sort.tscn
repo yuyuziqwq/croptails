@@ -1,7 +1,10 @@
 [gd_scene format=4 uid="uid://ldgcqf54abbs"]
 
 [ext_resource type="TileSet" uid="uid://4fu8svqq7pmu" path="res://tilesets/game_tile_set.tres" id="1_u4xdh"]
+[ext_resource type="PackedScene" uid="uid://dep15e4cr8o66" path="res://scenes/objects/plants/base_plant_tomato.tscn" id="2_a6lsi"]
 [ext_resource type="PackedScene" uid="uid://bb0njqu3y7tl0" path="res://scenes/character/player/player.tscn" id="2_a6q8b"]
+[ext_resource type="PackedScene" uid="uid://dpgf0voo1cvv3" path="res://scenes/objects/plants/base_plant_corn.tscn" id="3_dh61i"]
+[ext_resource type="PackedScene" uid="uid://dgsapairhgryr" path="res://scenes/ui/GameScreen.tscn" id="5_dh61i"]
 
 [node name="TestScenesTilemapLayerYSort" type="Node2D" unique_id=913855792]
 y_sort_enabled = true
@@ -31,8 +34,19 @@ y_sort_enabled = true
 tile_map_data = PackedByteArray("AAAJAAwAAgAAAAAAAgATAAwAAgAAAAAAAwAXAAwAAgAAAAAABQA=")
 tile_set = ExtResource("1_u4xdh")
 
+[node name="Node2D" type="Node2D" parent="." unique_id=1550594375]
+y_sort_enabled = true
+
+[node name="BasePlant2" parent="Node2D" unique_id=907950442 instance=ExtResource("2_a6lsi")]
+position = Vector2(284, 186)
+
+[node name="BasePlant" parent="Node2D" unique_id=1489697498 instance=ExtResource("3_dh61i")]
+position = Vector2(284, 169)
+
 [node name="player" parent="." unique_id=261036808 instance=ExtResource("2_a6q8b")]
 position = Vector2(243, 193)
-current_tool = 1
+current_tool = 3
 
 [node name="Camera2D" type="Camera2D" parent="player" unique_id=1309559733]
+
+[node name="GameScreen" parent="." unique_id=1360938850 instance=ExtResource("5_dh61i")]

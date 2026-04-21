@@ -406,12 +406,11 @@ collision_layer = 2
 script = ExtResource("1_puv7k")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2094311331]
-position = Vector2(0, -8)
+position = Vector2(0, -3)
 sprite_frames = SubResource("SpriteFrames_fmlog")
-animation = &"chopping_right"
+animation = &"idle_front"
 autoplay = "idle_front"
-frame = 1
-frame_progress = 1.0
+offset = Vector2(0, -5)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2050326430]
 position = Vector2(0, -4)
