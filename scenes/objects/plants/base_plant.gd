@@ -33,12 +33,15 @@ var growth_state: DataTypes.GrowthStates = DataTypes.GrowthStates.Seed
 		sprite_vframes = value
 		if plant_sprite_2d:
 			plant_sprite_2d.vframes = value
-@export var sprite_frame_coords: Vector2i:
+@export var sprite_frame: int:
 	set(value):
-		sprite_frame_coords = value
+		sprite_frame = value
 		if plant_sprite_2d:
-			plant_sprite_2d.frame_coords = value
-
+			plant_sprite_2d.frame = value
+#作物的帧在其texture的哪一行
+@export var sprite_frame_row: int:
+	set(value):
+		sprite_frame_row = value
 @export var crop_harvest_scene: PackedScene  
 
 # Called when the node enters the scene tree for the first time.
@@ -53,18 +56,19 @@ func _ready() -> void:
 	growth_cycle_component.crop_harvesting.connect(on_crop_harvesting)
 	
 #负责“节点准备好后兜底初始化” 
-func _apply_visual_config() -> void:                                                                                          
+func _apply_visual_config() -> void:             
 	plant_sprite_2d.texture = plant_texture                                                                                 
 	plant_sprite_2d.hframes = sprite_hframes                                                                                
-	plant_sprite_2d.vframes = sprite_vframes                                                                         
-	plant_sprite_2d.frame_coords = sprite_frame_coords                                                                      
+	plant_sprite_2d.vframes = sprite_vframes                                                           
+	plant_sprite_2d.frame = sprite_frame                                                                   
 	flowering_particles.texture = flowering_particles_texture                                                               
 	watering_particles.texture = watering_particles_texture 	
+	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	growth_state = growth_cycle_component.get_current_growth_state()
-	plant_sprite_2d.frame = growth_state
+	plant_sprite_2d.frame = growth_state + sprite_hframes *  sprite_frame_row
 	
 	if growth_state == DataTypes.GrowthStates.Maturity:
 		flowering_particles.emitting = true

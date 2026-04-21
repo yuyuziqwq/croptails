@@ -6,9 +6,10 @@
 [ext_resource type="PackedScene" uid="uid://bufiaxtomilry" path="res://scenes/objects/trees/big_tree.tscn" id="3_dvf2l"]
 [ext_resource type="Shader" uid="uid://jjssjrrdmwfy" path="res://scenes/objects/trees/shake.gdshader" id="4_dije0"]
 [ext_resource type="PackedScene" uid="uid://dgsapairhgryr" path="res://scenes/ui/GameScreen.tscn" id="4_dvf2l"]
-[ext_resource type="PackedScene" uid="uid://qtcppywqpyku" path="res://scenes/objects/plants/corn.tscn" id="5_fxb5m"]
+[ext_resource type="PackedScene" uid="uid://dep15e4cr8o66" path="res://scenes/objects/plants/base_plant_tomato.tscn" id="5_dvf2l"]
+[ext_resource type="PackedScene" uid="uid://dpgf0voo1cvv3" path="res://scenes/objects/plants/base_plant_corn.tscn" id="8_dije0"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_dvf2l"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_dije0"]
 resource_local_to_scene = true
 shader = ExtResource("4_dije0")
 shader_parameter/shake_inrensity = 0.0
@@ -33,7 +34,7 @@ tile_map_data = PackedByteArray("AAAcAA8AAQABAAEAAAAcAA4AAQABAAEAAAAcAA0AAQABAAE
 tile_set = ExtResource("2_fxb5m")
 
 [node name="BigTree" parent="GameTileMap" unique_id=1508279446 instance=ExtResource("3_dvf2l")]
-material = SubResource("ShaderMaterial_dvf2l")
+material = SubResource("ShaderMaterial_dije0")
 position = Vector2(205, 187)
 
 [node name="player" parent="." unique_id=261036808 instance=ExtResource("3_8hxna")]
@@ -41,5 +42,8 @@ position = Vector2(251, 189)
 
 [node name="GameScreen" parent="." unique_id=1360938850 instance=ExtResource("4_dvf2l")]
 
-[node name="Corn" parent="." unique_id=1103474834 instance=ExtResource("5_fxb5m")]
-position = Vector2(297, 190)
+[node name="BasePlant" parent="." unique_id=907950442 instance=ExtResource("8_dije0")]
+position = Vector2(284, 214)
+
+[node name="BasePlant2" parent="." unique_id=74466050 instance=ExtResource("5_dvf2l")]
+position = Vector2(285, 190)

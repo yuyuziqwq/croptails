@@ -13,6 +13,7 @@ size = Vector2(13.5, 8.5)
 script = ExtResource("1_7geoi")
 
 [node name="PlantSprite2D" type="Sprite2D" parent="." unique_id=384012834]
+position = Vector2(0, -4)
 
 [node name="FloweringParticles" parent="." unique_id=2057293766 instance=ExtResource("2_pil2k")]
 

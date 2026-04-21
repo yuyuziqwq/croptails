@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dep15e4cr8o66"]
+
+[ext_resource type="PackedScene" uid="uid://dmko1w60jjxno" path="res://scenes/objects/plants/base_plant.tscn" id="1_tixv0"]
+[ext_resource type="Texture2D" uid="uid://c6afr2w0p0sk2" path="res://assets/game/Objects/basic_plants.png" id="2_mts3v"]
+[ext_resource type="PackedScene" uid="uid://wv7nksvrqlrk" path="res://scenes/objects/plants/harvest/tomato_harvest.tscn" id="3_po2op"]
+
+[node name="BasePlant" unique_id=907950442 instance=ExtResource("1_tixv0")]
+plant_texture = ExtResource("2_mts3v")
+sprite_hframes = 6
+sprite_vframes = 2
+sprite_frame = 1
+sprite_frame_row = 1
+crop_harvest_scene = ExtResource("3_po2op")
