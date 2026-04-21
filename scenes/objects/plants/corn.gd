@@ -1,6 +1,6 @@
 extends Node2D
 
-var corn_harvest_scene = preload("res://scenes/objects/plants/corn_harvest.tscn")
+var corn_harvest_scene = preload("res://scenes/objects/plants/harvest/corn_harvest.tscn")
 
 @onready var sprite_2d: Sprite2D = $Sprite2D
 @onready var watering_particles: GPUParticles2D = $WateringParticles

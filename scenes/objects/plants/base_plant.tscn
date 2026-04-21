@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://dmko1w60jjxno"]
+
+[ext_resource type="Script" uid="uid://cmbcejwcfpiei" path="res://scenes/objects/plants/base_plant.gd" id="1_7geoi"]
+[ext_resource type="PackedScene" uid="uid://c6hos7kme2b8d" path="res://scenes/objects/plants/particles/flowering_particles.tscn" id="2_pil2k"]
+[ext_resource type="PackedScene" uid="uid://cb2hxxacq3n5r" path="res://scenes/objects/plants/particles/watering_particles.tscn" id="3_nowbb"]
+[ext_resource type="PackedScene" uid="uid://bkjyiwa32ij2o" path="res://scenes/objects/plants/component/growth_cycle_component.tscn" id="4_5u1xr"]
+[ext_resource type="PackedScene" uid="uid://nlscjqcms03m" path="res://scenes/components/hurt_component.tscn" id="5_vt843"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i8ycx"]
+size = Vector2(13.5, 8.5)
+
+[node name="BasePlant" type="Node2D" unique_id=907950442]
+script = ExtResource("1_7geoi")
+
+[node name="PlantSprite2D" type="Sprite2D" parent="." unique_id=384012834]
+
+[node name="FloweringParticles" parent="." unique_id=2057293766 instance=ExtResource("2_pil2k")]
+
+[node name="WateringParticles" parent="." unique_id=753707307 instance=ExtResource("3_nowbb")]
+
+[node name="GrowthCycleComponent" parent="." unique_id=1960748386 instance=ExtResource("4_5u1xr")]
+
+[node name="WateringComponent" parent="." unique_id=1412200979 instance=ExtResource("5_vt843")]
+position = Vector2(0, -4)
+tool = 3
+
+[node name="HurtComponentCollisionShape2D" type="CollisionShape2D" parent="WateringComponent" unique_id=1724467583]
+position = Vector2(0, 3)
+shape = SubResource("RectangleShape2D_i8ycx")
+debug_color = Color(0.83190435, 0.30449724, 0.6336639, 0.41960785)

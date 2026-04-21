@@ -34,7 +34,6 @@ func _ready() -> void:
 	#接受时间控制器的信号signal game_time,该处信号发送变量是游戏内时间
 	DayAndNightCycleManager.game_time.connect(on_game_time)
 	
-	
 func on_game_time(time: float) -> void:
 	#该函数可以用ai去画图y = 0.5 · ( sin(x − π/2) + 1 )可以理解，通常又来表示太阳的高度/光照强度
 	#当横坐标，也就是time（游戏内时间对应地球自转角度）为0时，太阳高度y为0
@@ -43,7 +42,3 @@ func on_game_time(time: float) -> void:
 	var sample_value = 0.5 * (sin(time - PI *0.5) + 1.0)
 	#在对应的纹理上取点
 	color = day_night_gradient_texture.gradient.sample(sample_value)
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass

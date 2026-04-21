@@ -12,7 +12,6 @@ signal hurt
 func _on_area_entered(area: Area2D) -> void:
 	#类型转换，将接触的模板转换成HitComponent类型，转换类型后对应的参数可以调用该类型的元素（参数，函数等）
 	var hit_component = area as HitComponent
-	print("now tool: ",hit_component.current_tool)
 	
 	#如果工具类型正确，那么就会传输HitComponent的伤害信号
 	if tool == hit_component.current_tool:
