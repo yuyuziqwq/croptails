@@ -55,6 +55,7 @@ layout_mode = 2
 custom_minimum_size = Vector2(26, 26)
 layout_mode = 2
 theme_type_variation = &"ToolButton"
+toggle_mode = true
 icon = SubResource("AtlasTexture_2yiqu")
 icon_alignment = 1
 
@@ -62,6 +63,7 @@ icon_alignment = 1
 custom_minimum_size = Vector2(26, 26)
 layout_mode = 2
 theme_type_variation = &"ToolButton"
+toggle_mode = true
 icon = SubResource("AtlasTexture_a6726")
 icon_alignment = 1
 
@@ -69,6 +71,7 @@ icon_alignment = 1
 custom_minimum_size = Vector2(26, 26)
 layout_mode = 2
 theme_type_variation = &"ToolButton"
+toggle_mode = true
 icon = SubResource("AtlasTexture_ur6ba")
 icon_alignment = 1
 
@@ -76,6 +79,7 @@ icon_alignment = 1
 custom_minimum_size = Vector2(26, 26)
 layout_mode = 2
 theme_type_variation = &"ToolButton"
+toggle_mode = true
 icon = SubResource("AtlasTexture_bdu3n")
 icon_alignment = 1
 
@@ -83,6 +87,7 @@ icon_alignment = 1
 custom_minimum_size = Vector2(26, 26)
 layout_mode = 2
 theme_type_variation = &"ToolButton"
+toggle_mode = true
 icon = SubResource("AtlasTexture_icge2")
 icon_alignment = 1
 

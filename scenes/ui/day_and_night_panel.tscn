@@ -69,6 +69,7 @@ layout_mode = 0
 offset_right = 26.0
 offset_bottom = 18.0
 theme_type_variation = &"DayAndNightButton"
+toggle_mode = true
 
 [node name="TextureRect" type="TextureRect" parent="PositionControl/Control/NormalSpeedButton" unique_id=509617852]
 layout_mode = 1
@@ -85,14 +86,15 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = SubResource("AtlasTexture_xc6ft")
 
-[node name="FastSpeedButton2" type="Button" parent="PositionControl/Control" unique_id=218910603]
+[node name="FastSpeedButton" type="Button" parent="PositionControl/Control" unique_id=218910603]
 layout_mode = 0
 offset_left = 27.0
 offset_right = 53.0
 offset_bottom = 18.0
 theme_type_variation = &"DayAndNightButton"
+toggle_mode = true
 
-[node name="TextureRect" type="TextureRect" parent="PositionControl/Control/FastSpeedButton2" unique_id=162242682]
+[node name="TextureRect" type="TextureRect" parent="PositionControl/Control/FastSpeedButton" unique_id=162242682]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -107,7 +109,7 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = SubResource("AtlasTexture_xc6ft")
 
-[node name="TextureRect2" type="TextureRect" parent="PositionControl/Control/FastSpeedButton2" unique_id=809725517]
+[node name="TextureRect2" type="TextureRect" parent="PositionControl/Control/FastSpeedButton" unique_id=809725517]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -122,14 +124,15 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = SubResource("AtlasTexture_xc6ft")
 
-[node name="CheetahSpeedButton3" type="Button" parent="PositionControl/Control" unique_id=744283308]
+[node name="CheetahSpeedButton" type="Button" parent="PositionControl/Control" unique_id=744283308]
 layout_mode = 0
 offset_left = 54.0
 offset_right = 80.0
 offset_bottom = 18.0
 theme_type_variation = &"DayAndNightButton"
+toggle_mode = true
 
-[node name="TextureRect" type="TextureRect" parent="PositionControl/Control/CheetahSpeedButton3" unique_id=1081899342]
+[node name="TextureRect" type="TextureRect" parent="PositionControl/Control/CheetahSpeedButton" unique_id=1081899342]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -144,7 +147,7 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = SubResource("AtlasTexture_xc6ft")
 
-[node name="TextureRect2" type="TextureRect" parent="PositionControl/Control/CheetahSpeedButton3" unique_id=1247243501]
+[node name="TextureRect2" type="TextureRect" parent="PositionControl/Control/CheetahSpeedButton" unique_id=1247243501]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -159,7 +162,7 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = SubResource("AtlasTexture_xc6ft")
 
-[node name="TextureRect3" type="TextureRect" parent="PositionControl/Control/CheetahSpeedButton3" unique_id=1130109108]
+[node name="TextureRect3" type="TextureRect" parent="PositionControl/Control/CheetahSpeedButton" unique_id=1130109108]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -175,5 +178,5 @@ grow_vertical = 2
 texture = SubResource("AtlasTexture_xc6ft")
 
 [connection signal="pressed" from="PositionControl/Control/NormalSpeedButton" to="." method="_on_normal_speed_button_pressed"]
-[connection signal="pressed" from="PositionControl/Control/FastSpeedButton2" to="." method="_on_fast_speed_button_2_pressed"]
-[connection signal="pressed" from="PositionControl/Control/CheetahSpeedButton3" to="." method="_on_cheetah_speed_button_3_pressed"]
+[connection signal="pressed" from="PositionControl/Control/FastSpeedButton" to="." method="_on_fast_speed_button_pressed"]
+[connection signal="pressed" from="PositionControl/Control/CheetahSpeedButton" to="." method="_on_cheetah_speed_button_pressed"]
