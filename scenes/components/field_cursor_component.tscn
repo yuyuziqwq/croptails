@@ -1,3 +1,3 @@
 [gd_scene format=3 uid="uid://c0xnulwy1au6b"]
 
-[node name="FieldCursorComponent" type="Node2D" unique_id=557428309]
+[node name="FieldCursorComponent" type="Node" unique_id=1377156720]
