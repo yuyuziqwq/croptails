@@ -5,8 +5,8 @@ extends Node
 
 @onready var player: Player = get_tree().get_first_node_in_group("player")
 
-var corn_plant_scene = preload("res://scenes/objects/plants/base_plant_corn.tscn")
-var tomato_plant_scene = preload("res://scenes/objects/plants/base_plant_tomato.tscn")
+var corn_plant_scene = preload("res://scenes/objects/plants/plant/base_plant_corn.tscn")
+var tomato_plant_scene = preload("res://scenes/objects/plants/plant/base_plant_tomato.tscn")
 
 #定义可变鼠标位置
 var mouse_position: Vector2

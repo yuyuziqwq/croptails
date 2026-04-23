@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dgd5u7t1qn7uf"]
 
 [ext_resource type="Texture2D" uid="uid://coprv7pxi85sn" path="res://assets/game/Objects/egg_item.png" id="1_h452w"]
-[ext_resource type="PackedScene" uid="uid://ber1fwnpuii31" path="res://scenes/components/collectable_component.tscn" id="2_twloa"]
+[ext_resource type="PackedScene" uid="uid://ber1fwnpuii31" path="res://scenes/components/object/collectable_component.tscn" id="2_twloa"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kxl7r"]
 atlas = ExtResource("1_h452w")

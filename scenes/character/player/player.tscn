@@ -9,7 +9,7 @@
 [ext_resource type="Script" uid="uid://cbvslgsfldnmr" path="res://scenes/character/player/chopping_state.gd" id="7_hixpj"]
 [ext_resource type="Script" uid="uid://bl5xjven7nh3m" path="res://scenes/character/player/tilling_state.gd" id="8_v051h"]
 [ext_resource type="Script" uid="uid://bcrlfyw241lde" path="res://scenes/character/player/watering_state.gd" id="9_i0j1t"]
-[ext_resource type="PackedScene" uid="uid://calq7d7mr2j76" path="res://scenes/components/hit_component.tscn" id="10_68dt2"]
+[ext_resource type="PackedScene" uid="uid://calq7d7mr2j76" path="res://scenes/components/player/hit_component.tscn" id="10_68dt2"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ucfoo"]
 atlas = ExtResource("1_4ywt2")
@@ -405,11 +405,12 @@ y_sort_enabled = true
 collision_layer = 2
 script = ExtResource("1_puv7k")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2094311331]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2094311331 groups=["player"]]
 position = Vector2(0, -3)
 sprite_frames = SubResource("SpriteFrames_fmlog")
 animation = &"idle_front"
 autoplay = "idle_front"
+frame_progress = 0.1511412
 offset = Vector2(0, -5)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2050326430]

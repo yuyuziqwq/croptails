@@ -1,10 +1,12 @@
 [gd_scene format=3 uid="uid://dmko1w60jjxno"]
 
-[ext_resource type="Script" uid="uid://cmbcejwcfpiei" path="res://scenes/objects/plants/base_plant.gd" id="1_7geoi"]
+[ext_resource type="Script" uid="uid://cmbcejwcfpiei" path="res://scenes/objects/plants/plant/base_plant.gd" id="1_7geoi"]
 [ext_resource type="PackedScene" uid="uid://c6hos7kme2b8d" path="res://scenes/objects/plants/particles/flowering_particles.tscn" id="2_pil2k"]
 [ext_resource type="PackedScene" uid="uid://cb2hxxacq3n5r" path="res://scenes/objects/plants/particles/watering_particles.tscn" id="3_nowbb"]
 [ext_resource type="PackedScene" uid="uid://bkjyiwa32ij2o" path="res://scenes/objects/plants/component/growth_cycle_component.tscn" id="4_5u1xr"]
-[ext_resource type="PackedScene" uid="uid://nlscjqcms03m" path="res://scenes/components/hurt_component.tscn" id="5_vt843"]
+[ext_resource type="PackedScene" uid="uid://nlscjqcms03m" path="res://scenes/components/object/hurt_component.tscn" id="5_vt843"]
+[ext_resource type="PackedScene" uid="uid://3juc2jo4bqsc" path="res://scenes/components/basic_system/save_data_component.tscn" id="6_latx1"]
+[ext_resource type="Resource" uid="uid://d4nj41v2va65w" path="res://resources/scene_data_resource.tres" id="7_s6xpj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i8ycx"]
 size = Vector2(13.5, 8.5)
@@ -30,3 +32,6 @@ tool = 3
 position = Vector2(0, 3)
 shape = SubResource("RectangleShape2D_i8ycx")
 debug_color = Color(0.83190435, 0.30449724, 0.6336639, 0.41960785)
+
+[node name="SaveDataComponent" parent="." unique_id=1527419617 instance=ExtResource("6_latx1")]
+save_data_resource = ExtResource("7_s6xpj")

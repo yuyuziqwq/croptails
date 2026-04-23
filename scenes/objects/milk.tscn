@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cnux2utqxscve"]
 
 [ext_resource type="Texture2D" uid="uid://b8813j1wt80b7" path="res://assets/game/Objects/simple_milk_and_grass_item.png" id="1_h1788"]
-[ext_resource type="PackedScene" uid="uid://ber1fwnpuii31" path="res://scenes/components/collectable_component.tscn" id="2_8f0fc"]
+[ext_resource type="PackedScene" uid="uid://ber1fwnpuii31" path="res://scenes/components/object/collectable_component.tscn" id="2_8f0fc"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_o2iuq"]
 atlas = ExtResource("1_h1788")

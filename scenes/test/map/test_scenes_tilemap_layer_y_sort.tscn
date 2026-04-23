@@ -1,9 +1,9 @@
 [gd_scene format=4 uid="uid://ldgcqf54abbs"]
 
 [ext_resource type="TileSet" uid="uid://4fu8svqq7pmu" path="res://tilesets/game_tile_set.tres" id="1_u4xdh"]
-[ext_resource type="PackedScene" uid="uid://dep15e4cr8o66" path="res://scenes/objects/plants/base_plant_tomato.tscn" id="2_a6lsi"]
+[ext_resource type="PackedScene" uid="uid://dep15e4cr8o66" path="res://scenes/objects/plants/plant/base_plant_tomato.tscn" id="2_a6lsi"]
 [ext_resource type="PackedScene" uid="uid://bb0njqu3y7tl0" path="res://scenes/character/player/player.tscn" id="2_a6q8b"]
-[ext_resource type="PackedScene" uid="uid://dpgf0voo1cvv3" path="res://scenes/objects/plants/base_plant_corn.tscn" id="3_dh61i"]
+[ext_resource type="PackedScene" uid="uid://dpgf0voo1cvv3" path="res://scenes/objects/plants/plant/base_plant_corn.tscn" id="3_dh61i"]
 [ext_resource type="PackedScene" uid="uid://dgsapairhgryr" path="res://scenes/ui/GameScreen.tscn" id="5_dh61i"]
 
 [node name="TestScenesTilemapLayerYSort" type="Node2D" unique_id=913855792]

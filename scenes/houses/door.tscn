@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dgp0xfkpdl13r" path="res://scenes/houses/door.gd" id="1_act2a"]
 [ext_resource type="Texture2D" uid="uid://eu32qem675xi" path="res://assets/game/Tilesets/doors.png" id="1_bxi54"]
-[ext_resource type="PackedScene" uid="uid://cffbch3ujjypc" path="res://scenes/components/interactable_component.tscn" id="3_1ugum"]
+[ext_resource type="PackedScene" uid="uid://cffbch3ujjypc" path="res://scenes/components/object/interactable_component.tscn" id="3_1ugum"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2dpp7"]
 atlas = ExtResource("1_bxi54")

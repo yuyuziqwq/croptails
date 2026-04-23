@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dpgf0voo1cvv3"]
 
-[ext_resource type="PackedScene" uid="uid://dmko1w60jjxno" path="res://scenes/objects/plants/base_plant.tscn" id="1_lu653"]
+[ext_resource type="PackedScene" uid="uid://dmko1w60jjxno" path="res://scenes/objects/plants/plant/base_plant.tscn" id="1_lu653"]
 [ext_resource type="Texture2D" uid="uid://c6afr2w0p0sk2" path="res://assets/game/Objects/basic_plants.png" id="2_qa4yo"]
 [ext_resource type="PackedScene" uid="uid://bgwgj0mdeqdbr" path="res://scenes/objects/plants/harvest/corn_harvest.tscn" id="3_go3ww"]
 
