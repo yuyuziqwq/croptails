@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qedmqvq1p6nw"
-path="res://.godot/imported/bitmask_references_2.png-e53a102eb12273f0c05efe8df7bd6dba.ctex"
+uid="uid://bx41f2kntjam1"
+path="res://.godot/imported/tilled_dirt_wide_cropfield.png-7fe9d1b6153923d1740bdbc6f278ee6b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/game/Tilesets/bitmask_references_2.png"
-dest_files=["res://.godot/imported/bitmask_references_2.png-e53a102eb12273f0c05efe8df7bd6dba.ctex"]
+source_file="res://assets/game/Tilesets/tilled_dirt_wide_cropfield.png"
+dest_files=["res://.godot/imported/tilled_dirt_wide_cropfield.png-7fe9d1b6153923d1740bdbc6f278ee6b.ctex"]
 
 [params]
 
