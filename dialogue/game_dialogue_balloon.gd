@@ -1,11 +1,11 @@
 extends BaseGameDialogueBalloon
 
+@onready var emotes_panel: Panel = $Balloon/MarginContainer/PanelContainer/MarginContainer/HBoxContainer/EmotesPanel
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
+func start(with_dialogue_resource: DialogueResource = null, title: String = "", extra_game_states: Array = []) -> void:
+	super.start(with_dialogue_resource, title, extra_game_states)
+	emotes_panel.play_emote("emote_talking")
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func next(next_id: String) -> void:
+	super.next(next_id)
+	emotes_panel.play_emote("emote_talking")

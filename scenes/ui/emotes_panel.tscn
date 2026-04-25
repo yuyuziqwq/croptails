@@ -198,6 +198,8 @@ animations = [{
 
 [node name="EmotesPanel" type="Panel" unique_id=326510673]
 custom_minimum_size = Vector2(50, 50)
+size_flags_horizontal = 0
+size_flags_vertical = 0
 theme = ExtResource("1_157xx")
 theme_type_variation = &"DarkWoodPanel"
 script = ExtResource("2_gdn4g")
@@ -222,8 +224,10 @@ position = Vector2(20, 22)
 sprite_frames = SubResource("SpriteFrames_crbtf")
 animation = &"emote_talking"
 autoplay = "emote_idle"
-frame_progress = 0.78605664
+frame_progress = 0.637024
 
 [node name="EmotedIdleTimer" type="Timer" parent="." unique_id=1343632670]
 wait_time = 5.0
 autostart = true
+
+[connection signal="timeout" from="EmotedIdleTimer" to="." method="_on_emoted_idle_timer_timeout"]

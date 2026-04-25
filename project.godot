@@ -21,6 +21,7 @@ InventoryManager="*uid://blwbc2lstiko"
 DayAndNightCycleManager="*uid://c88beykuly4p1"
 SaveGameManager="*uid://gae3q7h0b18p"
 DialogueManager="*uid://c3rodes2l3gxb"
+GameDialogueManager="*uid://cifyb30ccycfh"
 
 [display]
 
